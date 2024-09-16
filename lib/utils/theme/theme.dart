@@ -5,6 +5,7 @@ import 'package:firebase_ecommerce/utils/theme/custom_themes/chip_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/elevated_button_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/text_theme.dart';
+import 'package:firebase_ecommerce/utils/theme/custom_themes/textfield_theme.dart';
 import 'package:flutter/material.dart';
 
 class TAppTheme {
@@ -22,6 +23,7 @@ class TAppTheme {
     checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
     chipTheme: TChipTheme.lightChipTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: TTextFieldTheme.lightInputDecorationTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -36,5 +38,6 @@ class TAppTheme {
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
     chipTheme: TChipTheme.darkChipTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: TTextFieldTheme.darkInputDecorationTheme,
   );
 }
