@@ -1,5 +1,6 @@
 import 'package:firebase_ecommerce/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/bottom_sheet_theme.dart';
+import 'package:firebase_ecommerce/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/elevated_button_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class TAppTheme {
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -27,5 +29,6 @@ class TAppTheme {
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
   );
 }
