@@ -1,3 +1,4 @@
+import 'package:firebase_ecommerce/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/elevated_button_theme.dart';
 import 'package:firebase_ecommerce/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,7 @@ class TAppTheme {
     scaffoldBackgroundColor: Colors.white,
     textTheme: TTextTheme.lightTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -21,5 +23,6 @@ class TAppTheme {
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+    appBarTheme: TAppBarTheme.darkAppBarTheme,
   );
 }
