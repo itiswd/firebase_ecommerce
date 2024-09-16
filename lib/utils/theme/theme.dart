@@ -1,3 +1,5 @@
+import 'package:firebase_ecommerce/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:firebase_ecommerce/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class TAppTheme {
@@ -6,16 +8,18 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: Colors.deepPurple,
+    primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
-    textTheme: const TextTheme(),
+    textTheme: TTextTheme.lightTextTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: Colors.deepPurple,
+    primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
-    textTheme: const TextTheme(),
+    textTheme: TTextTheme.darkTextTheme,
+    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
   );
 }
