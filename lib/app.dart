@@ -1,16 +1,21 @@
+import 'package:firebase_ecommerce/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:firebase_ecommerce/utils/device/device_utility.dart';
 import 'package:firebase_ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    TDeviceUtils.hideStatusBar();
+    return GetMaterialApp(
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const Scaffold(),
+      debugShowCheckedModeBanner: false,
+      home: const OnBoardingScreen(),
     );
   }
 }

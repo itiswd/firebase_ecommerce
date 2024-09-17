@@ -1,8 +1,8 @@
 class TTexts {
   // Global Texts
 
-  // Onboarding Texts
-  static const String onboardingTitle1 = "Choose yuor product";
+  // OnBoarding Texts
+  static const String onboardingTitle1 = "Choose your product";
   static const String onboardingTitle2 = "Select payment method";
   static const String onboardingTitle3 = "Delivery at your door step";
 
