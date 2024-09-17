@@ -2,6 +2,7 @@ import 'package:firebase_ecommerce/features/authentication/controllers/onboardin
 import 'package:firebase_ecommerce/utils/constants/colors.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
 import 'package:firebase_ecommerce/utils/device/device_utility.dart';
+import 'package:firebase_ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingSkip extends StatelessWidget {
@@ -11,6 +12,7 @@ class OnBoardingSkip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
       top: TDeviceUtils.getAppBarHeight(),
       right: TSizes.defaultSpacing,
@@ -19,8 +21,9 @@ class OnBoardingSkip extends StatelessWidget {
         child: Text(
           'Skip',
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: TColors.primary,
+                color: dark ? TColors.primary : TColors.black,
                 fontWeight: FontWeight.bold,
+                fontSize: 18.0,
               ),
         ),
       ),
