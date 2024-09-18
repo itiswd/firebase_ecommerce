@@ -23,7 +23,7 @@ class OnBoardingController extends GetxController {
   //Jump to the next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.to(const Login());
+      Get.offAll(() => const Login());
     } else {
       pageController.nextPage(
         duration: const Duration(milliseconds: 400),

@@ -4,8 +4,8 @@ class TImages {
   static const String lightLogo = 'assets/logos/white_logo.png';
 
   // -- Social logos
-  static const String google = 'assets/logos/google_icon.svg';
-  static const String facebook = 'assets/logos/facebook_icon.svg';
+  static const String google = 'assets/logos/google.png';
+  static const String facebook = 'assets/logos/facebook.png';
 
   // -- OnBoarding images
   static const String onboarding1 = 'assets/images/onboarding/onboarding_1.png';
