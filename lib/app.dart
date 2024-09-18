@@ -1,4 +1,4 @@
-import 'package:firebase_ecommerce/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:firebase_ecommerce/features/onboarding/screens/onboarding.dart';
 import 'package:firebase_ecommerce/utils/device/device_utility.dart';
 import 'package:firebase_ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';

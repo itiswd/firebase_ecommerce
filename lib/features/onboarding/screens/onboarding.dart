@@ -1,8 +1,8 @@
-import 'package:firebase_ecommerce/features/authentication/controllers/onboarding_controller.dart';
-import 'package:firebase_ecommerce/features/authentication/screens/onboarding/widgets/onboarding_circular_button.dart';
-import 'package:firebase_ecommerce/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:firebase_ecommerce/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:firebase_ecommerce/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:firebase_ecommerce/features/onboarding/controllers/onboarding_controller.dart';
+import 'package:firebase_ecommerce/features/onboarding/screens/widgets/onboarding_circular_button.dart';
+import 'package:firebase_ecommerce/features/onboarding/screens/widgets/onboarding_dot_navigation.dart';
+import 'package:firebase_ecommerce/features/onboarding/screens/widgets/onboarding_page.dart';
+import 'package:firebase_ecommerce/features/onboarding/screens/widgets/onboarding_skip.dart';
 import 'package:firebase_ecommerce/utils/constants/image_strings.dart';
 import 'package:firebase_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
