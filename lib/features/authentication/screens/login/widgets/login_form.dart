@@ -1,6 +1,8 @@
+import 'package:firebase_ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
 import 'package:firebase_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {
@@ -53,7 +55,7 @@ class TLoginForm extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: TSizes.spaceBtwInputFields),
             //Login Button
             SizedBox(
               width: double.infinity,
@@ -66,8 +68,10 @@ class TLoginForm extends StatelessWidget {
             //Create Account Button
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {},
+              child: OutlinedButton(
+                onPressed: () {
+                  Get.to(() => const Signup());
+                },
                 child: const Text(TTexts.createAccount),
               ),
             ),

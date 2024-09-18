@@ -1,3 +1,4 @@
+import 'package:firebase_ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class TElevatedButtonTheme {
@@ -9,10 +10,10 @@ class TElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
+      backgroundColor: TColors.buttonPrimary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: TColors.buttonPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16),
       textStyle: const TextStyle(
         fontSize: 16,
@@ -31,10 +32,10 @@ class TElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
+      backgroundColor: TColors.buttonPrimary,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: TColors.buttonPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16),
       textStyle: const TextStyle(
         fontSize: 16,

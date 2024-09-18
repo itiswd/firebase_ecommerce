@@ -9,7 +9,7 @@ class TOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: Colors.grey),
       textStyle: const TextStyle(
         fontSize: 16,
         color: Colors.black,
@@ -28,7 +28,7 @@ class TOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blue),
+      side: const BorderSide(color: Colors.grey),
       textStyle: const TextStyle(
         fontSize: 16,
         color: Colors.white,
