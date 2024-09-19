@@ -10,7 +10,7 @@ class THelperFunctions {
       case 'Red':
         return Colors.red;
       case 'Blue':
-        return Colors.blue;
+        return const Color(0xff22b573);
       case 'Pink':
         return Colors.pink;
       case 'Grey':

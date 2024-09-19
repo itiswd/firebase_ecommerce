@@ -9,7 +9,7 @@ class TChipTheme {
     labelStyle: const TextStyle(
       color: Colors.black,
     ),
-    selectedColor: Colors.blue,
+    selectedColor: const Color(0xff22b573),
     padding: const EdgeInsets.all(12.0),
     checkmarkColor: Colors.white,
   );
@@ -20,7 +20,7 @@ class TChipTheme {
     labelStyle: TextStyle(
       color: Colors.white,
     ),
-    selectedColor: Colors.blue,
+    selectedColor: Color(0xff22b573),
     padding: EdgeInsets.all(12.0),
     checkmarkColor: Colors.white,
   );

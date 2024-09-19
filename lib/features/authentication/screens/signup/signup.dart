@@ -14,6 +14,7 @@ class Signup extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
+      //Appbar
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
@@ -24,17 +25,14 @@ class Signup extends StatelessWidget {
               //Title and subtitle
               const TSignUpHeader(),
               const SizedBox(height: TSizes.spaceBtwSections),
-
               //Form
               TSignUpForm(dark: dark),
               const SizedBox(height: TSizes.spaceBtwSections),
-
               //Divider
               const TFormDivider(
                 dividerText: TTexts.orsignUpwith,
               ),
               const SizedBox(height: TSizes.spaceBtwSections),
-
               //Social buttons
               const TSocialButton(),
             ],

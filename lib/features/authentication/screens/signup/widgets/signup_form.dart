@@ -1,7 +1,9 @@
+import 'package:firebase_ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:firebase_ecommerce/utils/constants/colors.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
 import 'package:firebase_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignUpForm extends StatelessWidget {
@@ -138,7 +140,9 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => const VerifyEmail());
+              },
               child: const Text(TTexts.createAccount),
             ),
           ),

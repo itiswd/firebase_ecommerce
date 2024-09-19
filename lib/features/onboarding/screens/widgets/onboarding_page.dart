@@ -25,7 +25,8 @@ class OnBoardingPage extends StatelessWidget {
           image,
         ),
         Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpacing),
+          padding:
+              const EdgeInsets.symmetric(horizontal: TSizes.defaultSpacing),
           child: Column(
             children: [
               const SizedBox(height: TSizes.spaceBtwSections),
