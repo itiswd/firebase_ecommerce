@@ -1,4 +1,4 @@
-import 'package:firebase_ecommerce/features/authentication/screens/signup/verify_email.dart';
+import 'package:firebase_ecommerce/common/widgets/auth/verify_email.dart';
 import 'package:firebase_ecommerce/utils/constants/colors.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
 import 'package:firebase_ecommerce/utils/constants/text_strings.dart';
@@ -141,7 +141,13 @@ class TSignUpForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                Get.to(() => const VerifyEmail());
+                Get.to(
+                  () => const VerifyEmail(
+                    title: TTexts.confirmeEmailTitle,
+                    subtitle: TTexts.confirmeEmailSubTitle,
+                    buttonText: TTexts.continueText,
+                  ),
+                );
               },
               child: const Text(TTexts.createAccount),
             ),
