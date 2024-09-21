@@ -1,3 +1,4 @@
+import 'package:firebase_ecommerce/bottom_nav_bar.dart';
 import 'package:firebase_ecommerce/features/authentication/screens/forget/forget_password.dart';
 import 'package:firebase_ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
@@ -63,7 +64,9 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const BottomNavBar());
+                },
                 child: const Text(TTexts.singnIn),
               ),
             ),
