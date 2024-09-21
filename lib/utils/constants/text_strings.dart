@@ -20,6 +20,7 @@ class TTexts {
   static const String submit = "Submit";
   static const String appName = "IT-Store";
   static const String continueText = "Continue";
+  static const String done = "done";
 
   // Authentication Fore Text
   static const String firstName = "First Name";
