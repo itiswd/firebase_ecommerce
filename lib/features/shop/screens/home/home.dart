@@ -3,7 +3,9 @@ import 'package:firebase_ecommerce/common/widgets/custom_shapes/search_container
 import 'package:firebase_ecommerce/common/widgets/texts/section_header.dart';
 import 'package:firebase_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:firebase_ecommerce/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:firebase_ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:firebase_ecommerce/utils/constants/colors.dart';
+import 'package:firebase_ecommerce/utils/constants/image_strings.dart';
 import 'package:firebase_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +18,7 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            //Header
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
@@ -38,10 +41,18 @@ class Home extends StatelessWidget {
                       //Categories
                       THomeCategories(),
                     ],
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
+            //Banners
+            THomePromoSlider(
+              images: [
+                TImages.banner1,
+                TImages.banner2,
+                TImages.banner3,
+              ],
+            ),
           ],
         ),
       ),

@@ -15,4 +15,9 @@ class TImages {
   // -- Auth images
   static const String verify = 'assets/images/auth/verify.png';
   static const String successfull = 'assets/images/auth/successfull.png';
+
+  // -- Banners
+  static const String banner1 = 'assets/images/banners/banner1.jpg';
+  static const String banner2 = 'assets/images/banners/banner2.jpg';
+  static const String banner3 = 'assets/images/banners/banner3.jpg';
 }
