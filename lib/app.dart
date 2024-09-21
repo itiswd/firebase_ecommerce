@@ -1,4 +1,4 @@
-import 'package:firebase_ecommerce/features/onboarding/screens/onboarding.dart';
+import 'package:firebase_ecommerce/bottom_nav_bar.dart';
 import 'package:firebase_ecommerce/utils/device/device_utility.dart';
 import 'package:firebase_ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const OnBoardingScreen(),
+      home: const BottomNavBar(),
     );
   }
 }
