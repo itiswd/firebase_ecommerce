@@ -42,8 +42,8 @@ class THomePromoSlider extends StatelessWidget {
                 images.length,
                 (index) {
                   return Container(
-                    width: 10.0,
-                    height: 10.0,
+                    width: 8.0,
+                    height: 8.0,
                     margin: const EdgeInsets.only(right: 4.0),
                     decoration: BoxDecoration(
                       color: controller.currentPageIndex.value == index

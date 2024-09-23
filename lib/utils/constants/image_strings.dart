@@ -23,4 +23,15 @@ class TImages {
 
   // -- Products
   static const String nike = 'assets/images/products/nike_shows.png';
+
+  // -- Categories
+
+  static const List<String> categoriesImages = [
+    'assets/images/categories/clothes.png',
+    'assets/images/categories/device.png',
+    'assets/images/categories/furnitures.png',
+    'assets/images/categories/rings.png',
+    'assets/images/categories/sneakers.png',
+    'assets/images/categories/sports.png',
+  ];
 }

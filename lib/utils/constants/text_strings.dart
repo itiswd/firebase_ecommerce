@@ -65,4 +65,14 @@ class TTexts {
       "Your Account Successfully Created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is created, Unleash the joy of Seamless Online Shopping!";
+
+  //Categories
+  static const List<String> categories = [
+    "clothes",
+    "electronics",
+    "furnitures",
+    "jewellery",
+    "shoes",
+    "sports",
+  ];
 }

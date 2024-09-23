@@ -35,7 +35,8 @@ class TVerticalImageText extends StatelessWidget {
             child: Center(
               child: Image(
                 image: AssetImage(image),
-                fit: BoxFit.cover,
+                width: 36,
+                height: 36,
                 color: dark ? TColors.white : TColors.black,
               ),
             ),
@@ -44,13 +45,15 @@ class TVerticalImageText extends StatelessWidget {
           //Text
           SizedBox(
             width: 56,
-            child: Text(
-              title,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.labelMedium!.apply(
-                    color: textColor,
-                  ),
+            child: Center(
+              child: Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.labelMedium!.apply(
+                      color: textColor,
+                    ),
+              ),
             ),
           ),
         ],
