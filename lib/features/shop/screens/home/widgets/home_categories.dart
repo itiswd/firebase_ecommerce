@@ -21,7 +21,9 @@ class THomeCategories extends StatelessWidget {
           return Padding(
             padding: EdgeInsets.only(
               left: index == 0 ? TSizes.defaultSpacing : TSizes.spaceBtwItems,
-              right: index == 8 ? TSizes.defaultSpacing : 0.0,
+              right: index == TTexts.categories.length - 1
+                  ? TSizes.defaultSpacing
+                  : 0.0,
             ),
             child: TVerticalImageText(
               image: TImages.categoriesImages[index],
