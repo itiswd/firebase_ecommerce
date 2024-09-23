@@ -20,4 +20,7 @@ class TImages {
   static const String banner1 = 'assets/images/banners/banner1.jpg';
   static const String banner2 = 'assets/images/banners/banner2.jpg';
   static const String banner3 = 'assets/images/banners/banner3.jpg';
+
+  // -- Products
+  static const String nike = 'assets/images/products/nike_shows.png';
 }

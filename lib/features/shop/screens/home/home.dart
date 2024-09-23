@@ -1,5 +1,6 @@
 import 'package:firebase_ecommerce/common/widgets/custom_shapes/header_container.dart';
 import 'package:firebase_ecommerce/common/widgets/custom_shapes/search_container.dart';
+import 'package:firebase_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:firebase_ecommerce/common/widgets/texts/section_header.dart';
 import 'package:firebase_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:firebase_ecommerce/features/shop/screens/home/widgets/home_categories.dart';
@@ -53,6 +54,15 @@ class Home extends StatelessWidget {
                 TImages.banner3,
               ],
             ),
+            SizedBox(height: TSizes.spaceBtwSections),
+            //Popular Products
+            TSectionHeader(
+              title: 'Popular Products',
+            ),
+            SizedBox(height: TSizes.spaceBtwItems),
+            //Products
+            ProductCardVertical(),
+            SizedBox(height: TSizes.spaceBtwSections),
           ],
         ),
       ),
