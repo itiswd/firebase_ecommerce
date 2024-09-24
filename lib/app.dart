@@ -1,3 +1,4 @@
+import 'package:firebase_ecommerce/bindings/general_bindings.dart';
 import 'package:firebase_ecommerce/bottom_nav_bar.dart';
 import 'package:firebase_ecommerce/utils/device/device_utility.dart';
 import 'package:firebase_ecommerce/utils/theme/theme.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+      initialBinding: GeneralBindings(),
       home: const BottomNavBar(),
     );
   }

@@ -16,27 +16,24 @@ class Signup extends StatelessWidget {
     return Scaffold(
       //Appbar
       appBar: AppBar(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpacing),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              //Title and subtitle
-              const TSignUpHeader(),
-              const SizedBox(height: TSizes.spaceBtwSections),
-              //Form
-              TSignUpForm(dark: dark),
-              const SizedBox(height: TSizes.spaceBtwSections),
-              //Divider
-              const TFormDivider(
-                dividerText: TTexts.orsignUpwith,
-              ),
-              const SizedBox(height: TSizes.spaceBtwSections),
-              //Social buttons
-              const TSocialButton(),
-            ],
-          ),
+      body: Padding(
+        padding: const EdgeInsets.all(TSizes.defaultSpacing),
+        child: ListView(
+          children: [
+            //Title and subtitle
+            const TSignUpHeader(),
+            const SizedBox(height: TSizes.spaceBtwSections),
+            //Form
+            TSignUpForm(dark: dark),
+            const SizedBox(height: TSizes.spaceBtwSections),
+            //Divider
+            const TFormDivider(
+              dividerText: TTexts.orsignUpwith,
+            ),
+            const SizedBox(height: TSizes.spaceBtwSections),
+            //Social buttons
+            const TSocialButton(),
+          ],
         ),
       ),
     );
