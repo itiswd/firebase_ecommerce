@@ -10,12 +10,16 @@ import 'package:get_storage/get_storage.dart';
 void main() async {
   // Widget binding
   WidgetsFlutterBinding.ensureInitialized();
+
   // GetX Local Storage
   await GetStorage.init();
+
   // Await splash until app is ready
   FlutterNativeSplash.preserve(widgetsBinding: WidgetsBinding.instance);
-  // Firebase
+
+  // Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
       .then((FirebaseApp value) => Get.put(AuthRepo()));
+
   runApp(const MyApp());
 }

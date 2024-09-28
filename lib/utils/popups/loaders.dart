@@ -8,17 +8,16 @@ class TLoaders {
   static warningSnackBar({
     required String title,
     String message = '',
-    int duration = 3,
   }) {
     Get.snackbar(
       title,
       message,
-      isDismissible: true,
-      shouldIconPulse: true,
+      // isDismissible: true,
+      // shouldIconPulse: true,
       colorText: TColors.white,
       backgroundColor: TColors.primary,
       snackPosition: SnackPosition.BOTTOM,
-      duration: Duration(seconds: duration),
+      duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(10),
       icon: const Icon(Iconsax.warning_2, color: TColors.white),
     );
@@ -26,14 +25,12 @@ class TLoaders {
 
   static loading({
     required String title,
-    String message = '',
-    int duration = 3,
+    required String message,
   }) {}
 
   static success({
     required String title,
-    String message = '',
-    int duration = 3,
+    required String message,
   }) {
     Get.snackbar(
       title,
@@ -43,7 +40,7 @@ class TLoaders {
       colorText: TColors.white,
       backgroundColor: TColors.success,
       snackPosition: SnackPosition.BOTTOM,
-      duration: Duration(seconds: duration),
+      duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(10),
       icon: const Icon(Iconsax.check, color: TColors.white),
     );
@@ -51,7 +48,7 @@ class TLoaders {
 
   static error({
     required String title,
-    String message = '',
+    required String message,
   }) {
     Get.snackbar(
       title,

@@ -7,11 +7,12 @@ import 'package:get/get.dart';
 class TFullScreenLoader {
   static void openLoader(String text, String animation) {
     showDialog(
+      useSafeArea: false,
       context: Get.overlayContext!,
       barrierDismissible: false,
       builder: (context) {
         return PopScope(
-          canPop: false,
+          canPop: true,
           child: Container(
             width: double.infinity,
             height: double.infinity,

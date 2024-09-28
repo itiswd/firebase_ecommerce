@@ -37,7 +37,7 @@ class TValidator {
   static String? validatePhoneNumber(String? value) {
     if (value == null || value.isEmpty) {
       return 'Phone number is required.';
-    } else if (!RegExp(r'^\d{10}$').hasMatch(value)) {
+    } else if (!RegExp(r'^\d{11}$').hasMatch(value)) {
       return 'Invalid phone number formate (10 digits required).';
     }
     return null;
